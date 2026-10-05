@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Rêve Signature — Catalogue &amp; commande</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="cap.css">
+</head>
+
+<body>
+
+<header class="entete">
+  <div class="entete-inner">
+    <button class="logo-btn" id="btnLogo" aria-label="Informations Le Rêve Capitonné">
+      <img src="revecaplogo.png" alt="Logo Le Rêve Capitonné">
+    </button>
+    <nav class="nav-principale">
+      <a class="lien-nav" href="accueil.html">Accueil</a>
+      <a class="lien-nav" href="catalogue.html" id="navCatalogue">Catalogue</a>
+      <a class="lien-nav" href="connexion.html" id="navCompte">Mon compte</a>
+      <button class="lien-nav cache-onglet" id="btnDeconnexion" type="button">Déconnexion</button>
+    </nav>
+  </div>
+</header>
+
+<div class="modale-fond" id="modaleInfos">
+  <div class="modale-boite capiton">
+    <button class="modale-fermer" data-close="modaleInfos">&times;</button>
+    <img src="revecaplogo.png" alt="Le Rêve Capitonné" class="modale-logo">
+    <h2>LE RÊVE SIGNATURE</h2>
+    <p class="modale-soustitre">Chambres &amp; Dressing sur mesure</p>
+    <ul class="modale-liste">
+      <li><span class="etiquette">☎ Téléphone</span> <a href="tel:+213540234248">+213 540 23 42 48</a></li>
+      <li><span class="etiquette">📍 Adresse</span> Koléa, Tipaza, Algérie</li>
+      <li><span class="etiquette">🕒 Horaires</span> Dim - Jeu · 9h00 - 18h00</li>
+    </ul>
+    <a class="btn btn-or" target="_blank" rel="noopener"
+       href="https://www.google.com/maps/search/?api=1&query=Kol%C3%A9a+Tipaza+Algerie">Voir sur la carte</a>
+  </div>
+</div>
+
+<main>
+
+<section class="page active" id="catalogue">
+  <div class="entete-catalogue">
+    <h2 class="titre-section">Bienvenue<span id="nomClient"></span></h2>
+    <p class="soustitre-section">Choisissez une fabrication à personnaliser</p>
+  </div>
+
+  <div class="grille-produits" id="grilleProduits">
+
+    <div class="carte-produit">
+      <img src="chambre.jpg" alt="Chambre à coucher complète">
+      <div class="carte-produit-corps">
+        <h3>Chambre à coucher complète</h3>
+        <span class="etoiles">★★★★★</span>
+        <p>Ensemble complet capitonné : lit, têtes de lit, tables de nuit assorties.</p>
+        <button class="btn btn-or btn-commander" data-produit="chambre" data-nom="Chambre à coucher complète" data-type="3d">Commander</button>
+      </div>
+    </div>
+
+    <div class="carte-produit">
+      <img src="coiffeuse.jpg" alt="Coiffeuse capitonnée">
+      <div class="carte-produit-corps">
+        <h3>Coiffeuse capitonnée</h3>
+        <span class="etoiles">★★★★★</span>
+        <p>Coiffeuse sur mesure avec miroir et rangements capitonnés.</p>
+        <button class="btn btn-or btn-commander" data-produit="coiffeuse" data-nom="Coiffeuse capitonnée" data-type="3d">Commander</button>
+      </div>
+    </div>
+
+    <div class="carte-produit">
+      <img src="armoire.jpg" alt="Armoire capitonnée">
+      <div class="carte-produit-corps">
+        <h3>Armoire capitonnée</h3>
+        <span class="etoiles">★★★★☆</span>
+        <p>Armoire capitonnée grande capacité, portes battantes ou coulissantes.</p>
+        <button class="btn btn-or btn-commander" data-produit="armoire" data-nom="Armoire capitonnée" data-type="3d">Commander</button>
+      </div>
+    </div>
+
+    <div class="carte-produit">
+      <img src="table-nuit.jpg" alt="Table de nuit">
+      <div class="carte-produit-corps">
+        <h3>Table de nuit</h3>
+        <span class="etoiles">★★★★★</span>
+        <p>Petite table de nuit capitonnée assortie à votre lit.</p>
+        <button class="btn btn-or btn-commander" data-produit="table-nuit" data-nom="Table de nuit" data-type="3d">Commander</button>
+      </div>
+    </div>
+
+    <div class="carte-produit">
+      <img src="lit.jpg" alt="Lit capitonné">
+      <div class="carte-produit-corps">
+        <h3>Lit capitonné</h3>
+        <span class="etoiles">★★★★★</span>
+        <p>Lit capitonné, toutes tailles (90, 140, 160, 180 cm...).</p>
+        <button class="btn btn-or btn-commander" data-produit="lit" data-nom="Lit capitonné" data-type="2d">Commander</button>
+      </div>
+    </div>
+
+    <div class="carte-produit">
+      <img src="miroir.png" alt="Miroir capitonné">
+      <div class="carte-produit-corps">
+        <h3>Miroir capitonné</h3>
+        <span class="etoiles">★★★★☆</span>
+        <p>Miroir encadré de capitonné, forme rectangulaire ou ovale.</p>
+        <button class="btn btn-or btn-commander" data-produit="miroir" data-nom="Miroir capitonné" data-type="2d">Commander</button>
+      </div>
+    </div>
+
+    <div class="carte-produit">
+      <img src="table-tv.jpg" alt="Table TV capitonnée">
+      <div class="carte-produit-corps">
+        <h3>Table TV capitonnée</h3>
+        <span class="etoiles">★★★★☆</span>
+        <p>Meuble TV bas capitonné, avec ou sans rangements.</p>
+        <button class="btn btn-or btn-commander" data-produit="table-tv" data-nom="Table TV capitonnée" data-type="3d">Commander</button>
+      </div>
+    </div>
+
+    <div class="carte-produit">
+      <img src="dressing.jpg" alt="Dressing sur mesure">
+      <div class="carte-produit-corps">
+        <h3>Dressing sur mesure</h3>
+        <span class="etoiles">★★★★★</span>
+        <p>Dressing complet capitonné, agencement selon votre pièce.</p>
+        <button class="btn btn-or btn-commander" data-produit="dressing" data-nom="Dressing sur mesure" data-type="3d">Commander</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="page" id="modeles">
+  <button class="btn-retour" data-retour="catalogue">&larr; Retour au catalogue</button>
+  <h2 class="titre-section" id="titreModeles">Modèles</h2>
+  <p class="soustitre-section">Choisissez le modèle qui vous inspire</p>
+
+  <input type="file" id="inputPhotoModelePerso" accept="image/*" class="cache-champ-fichier">
+
+
+  <div class="grille-instagram bloc-modeles" data-produit="chambre">
+    <div class="carte-modele">
+      <img src="chambre-1.jpg" alt="Chambre à coucher — modèle 1">
+      <div class="carte-modele-bas"><span>Modèle 1</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele">
+      <img src="chambre-2.jpg" alt="Chambre à coucher — modèle 2">
+      <div class="carte-modele-bas"><span>Modèle 2</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele">
+      <img src="chambre-3.jpg" alt="Chambre à coucher — modèle 3">
+      <div class="carte-modele-bas"><span>Modèle 3</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele">
+      <img src="chambre-4.jpg" alt="Chambre à coucher — modèle 4">
+      <div class="carte-modele-bas"><span>Modèle 4</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele carte-modele-ajout">
+      <button type="button" class="btn-ajouter-modele" aria-label="Ajouter ma propre photo de modèle">
+        <span class="plus-icone">+</span>
+        <span class="plus-texte">Ajouter ma photo</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="grille-instagram bloc-modeles" data-produit="coiffeuse">
+    <div class="carte-modele">
+      <img src="coiffeuse-1.jpg" alt="Coiffeuse — modèle 1">
+      <div class="carte-modele-bas"><span>Modèle 1</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele">
+      <img src="coiffeuse-2.jpg" alt="Coiffeuse — modèle 2">
+      <div class="carte-modele-bas"><span>Modèle 2</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele">
+      <img src="coiffeuse-3.jpg" alt="Coiffeuse — modèle 3">
+      <div class="carte-modele-bas"><span>Modèle 3</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele">
+      <img src="coiffeuse-4.jpg" alt="Coiffeuse — modèle 4">
+      <div class="carte-modele-bas"><span>Modèle 4</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele carte-modele-ajout">
+      <button type="button" class="btn-ajouter-modele" aria-label="Ajouter ma propre photo de modèle">
+        <span class="plus-icone">+</span>
+        <span class="plus-texte">Ajouter ma photo</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="grille-instagram bloc-modeles" data-produit="armoire">
+    <div class="carte-modele">
+      <img src="armoire-1.jpg" alt="Armoire — modèle 1">
+      <div class="carte-modele-bas"><span>Modèle 1</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele">
+      <img src="armoire-2.jpg" alt="Armoire — modèle 2">
+      <div class="carte-modele-bas"><span>Modèle 2</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele">
+      <img src="armoire-3.jpg" alt="Armoire — modèle 3">
+      <div class="carte-modele-bas"><span>Modèle 3</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele">
+      <img src="armoire-4.jpg" alt="Armoire — modèle 4">
+      <div class="carte-modele-bas"><span>Modèle 4</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele carte-modele-ajout">
+      <button type="button" class="btn-ajouter-modele" aria-label="Ajouter ma propre photo de modèle">
+        <span class="plus-icone">+</span>
+        <span class="plus-texte">Ajouter ma photo</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="grille-instagram bloc-modeles" data-produit="table-nuit">
+    <div class="carte-modele">
+      <img src="table-nuit-1.jpg" alt="Table de nuit — modèle 1">
+      <div class="carte-modele-bas"><span>Modèle 1</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele">
+      <img src="table-nuit-2.jpg" alt="Table de nuit — modèle 2">
+      <div class="carte-modele-bas"><span>Modèle 2</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele">
+      <img src="table-nuit-3.png" alt="Table de nuit — modèle 3">
+      <div class="carte-modele-bas"><span>Modèle 3</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele">
+      <img src="table-nuit-4.jpg" alt="Table de nuit — modèle 4">
+      <div class="carte-modele-bas"><span>Modèle 4</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele carte-modele-ajout">
+      <button type="button" class="btn-ajouter-modele" aria-label="Ajouter ma propre photo de modèle">
+        <span class="plus-icone">+</span>
+        <span class="plus-texte">Ajouter ma photo</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="grille-instagram bloc-modeles" data-produit="lit">
+    <div class="carte-modele">
+      <img src="lit-1.jpg" alt="Lit capitonné — modèle 1">
+      <div class="carte-modele-bas"><span>Modèle 1</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele">
+      <img src="lit-2.jpg" alt="Lit capitonné — modèle 2">
+      <div class="carte-modele-bas"><span>Modèle 2</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele">
+      <img src="lit-3.jpg" alt="Lit capitonné — modèle 3">
+      <div class="carte-modele-bas"><span>Modèle 3</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele">
+      <img src="lit-4.jpg" alt="Lit capitonné — modèle 4">
+      <div class="carte-modele-bas"><span>Modèle 4</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele">
+      <img src="lit-5.png" alt="Lit capitonné — modèle 5">
+      <div class="carte-modele-bas"><span>Modèle 5</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele">
+      <img src="lit-6.jpg" alt="Lit capitonné — modèle 6">
+      <div class="carte-modele-bas"><span>Modèle 6</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele carte-modele-ajout">
+      <button type="button" class="btn-ajouter-modele" aria-label="Ajouter ma propre photo de modèle">
+        <span class="plus-icone">+</span>
+        <span class="plus-texte">Ajouter ma photo</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="grille-instagram bloc-modeles" data-produit="miroir">
+    <div class="carte-modele">
+      <img src="miroir-1.jpg" alt="Miroir capitonné — modèle 1">
+      <div class="carte-modele-bas"><span>Modèle 1</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele">
+      <img src="miroir-2.png" alt="Miroir capitonné — modèle 2">
+      <div class="carte-modele-bas"><span>Modèle 2</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele">
+      <img src="miroir-3.png" alt="Miroir capitonné — modèle 3">
+      <div class="carte-modele-bas"><span>Modèle 3</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele">
+      <img src="miroir-4.jpg" alt="Miroir capitonné — modèle 4">
+      <div class="carte-modele-bas"><span>Modèle 4</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele carte-modele-ajout">
+      <button type="button" class="btn-ajouter-modele" aria-label="Ajouter ma propre photo de modèle">
+        <span class="plus-icone">+</span>
+        <span class="plus-texte">Ajouter ma photo</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="grille-instagram bloc-modeles" data-produit="table-tv">
+    <div class="carte-modele">
+      <img src="table-tv-1.jpg" alt="Table TV — modèle 1">
+      <div class="carte-modele-bas"><span>Modèle 1</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele">
+      <img src="table-tv-2.png" alt="Table TV — modèle 2">
+      <div class="carte-modele-bas"><span>Modèle 2</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele">
+      <img src="table-tv-3.jpg" alt="Table TV — modèle 3">
+      <div class="carte-modele-bas"><span>Modèle 3</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele">
+      <img src="table-tv-4.jpg" alt="Table TV — modèle 4">
+      <div class="carte-modele-bas"><span>Modèle 4</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele carte-modele-ajout">
+      <button type="button" class="btn-ajouter-modele" aria-label="Ajouter ma propre photo de modèle">
+        <span class="plus-icone">+</span>
+        <span class="plus-texte">Ajouter ma photo</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="grille-instagram bloc-modeles" data-produit="dressing">
+    <div class="carte-modele">
+      <img src="dressing-1.jpg" alt="Dressing — modèle 1">
+      <div class="carte-modele-bas"><span>Modèle 1</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele">
+      <img src="dressing-2.jpg" alt="Dressing — modèle 2">
+      <div class="carte-modele-bas"><span>Modèle 2</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele">
+      <img src="dressing-3.jpg" alt="Dressing — modèle 3">
+      <div class="carte-modele-bas"><span>Modèle 3</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele">
+      <img src="dressing-4.png" alt="Dressing — modèle 4">
+      <div class="carte-modele-bas"><span>Modèle 4</span><button class="btn btn-or btn-choisir-modele">Choisir ce modèle</button></div>
+    </div>
+    <div class="carte-modele carte-modele-ajout">
+      <button type="button" class="btn-ajouter-modele" aria-label="Ajouter ma propre photo de modèle">
+        <span class="plus-icone">+</span>
+        <span class="plus-texte">Ajouter ma photo</span>
+      </button>
+    </div>
+  </div>
+
+</section>
+
+<section class="page" id="personnalisation">
+  <button class="btn-retour" data-retour="modeles">&larr; Retour aux modèles</button>
+
+  <div class="carte-commande capiton">
+    <h2 class="titre-section" id="titrePersonnalisation">Personnalisez votre modèle</h2>
+    <img id="imgModeleChoisi" class="apercu-modele" src="" alt="Modèle choisi">
+
+    <form class="formulaire" id="formCommande">
+      <div class="grille-mesures" id="zoneMesures"><</div>
+
+      <label>Couleur du capitonné
+        <select id="choixCouleur" required>
+          <option value="">-- Choisissez une couleur --</option>
+          <option value="Noir">Noir</option>
+          <option value="Beige">Beige</option>
+          <option value="Gris">Gris</option>
+          <option value="Blanc cassé">Blanc cassé</option>
+          <option value="Or / Doré">Or / Doré</option>
+          <option value="Bordeaux">Bordeaux</option>
+          <option value="Vert bouteille">Vert bouteille</option>
+          <option value="Autre (préciser en note)">Autre (préciser en note)</option>
+        </select>
+      </label>
+
+      <label>Photo de référence (le modèle que vous souhaitez fabriquer)
+        <input type="file" id="photoReference" accept="image/*">
+      </label>
+      <div class="apercu-fichier" id="apercuFichier"></div>
+
+      <label>Remarques / précisions
+        <textarea id="notesCommande" rows="3" placeholder="Design, finitions, délai souhaité..."></textarea>
+      </label>
+
+      <button type="submit" class="btn btn-or btn-large">Commander sur WhatsApp</button>
+      <p class="info-note">En cliquant sur « Commander », un message reprenant toutes vos informations
+        s'ouvrira dans WhatsApp, prêt à être envoyé à notre atelier. Merci de joindre votre photo de
+        référence manuellement dans la conversation WhatsApp.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="pied">
+  <div class="pied-motif" aria-hidden="true"></div>
+  <div class="pied-inner">
+    <img src="revecaplogo.png" alt="Le Rêve Capitonné" class="pied-logo">
+    <p class="pied-titre">LE RÊVE SIGNATURE</p>
+    <p class="pied-adresse">Koléa, Tipaza — Algérie · +213 540 23 42 48</p>
+
+    <div class="pied-reseaux">
+      <a href="https://wa.me/213555000000" target="_blank" rel="noopener" aria-label="WhatsApp" class="icone-reseau">
+        <svg viewBox="0 0 24 24"><path d="M17.6 6.4A8.9 8.9 0 0 0 12.03 3.5c-4.9 0-8.9 4-8.9 8.9 0 1.57.42 3.1 1.2 4.44L3 21l4.28-1.29a8.9 8.9 0 0 0 4.75 1.37h0c4.9 0 8.9-4 8.9-8.9 0-2.38-.93-4.62-2.63-6.3-.24-.24-.5-.47-.7-.48zm-5.57 13.7h0a7.4 7.4 0 0 1-3.77-1.03l-.27-.16-2.8.84.75-2.73-.18-.28a7.4 7.4 0 0 1-1.14-3.94c0-4.08 3.32-7.4 7.4-7.4 1.98 0 3.84.77 5.24 2.17a7.36 7.36 0 0 1 2.17 5.24c0 4.08-3.32 7.4-7.4 7.4zm4.06-5.54c-.22-.11-1.3-.65-1.51-.72-.2-.07-.35-.11-.5.11-.15.22-.57.72-.7.87-.13.15-.26.16-.48.06-.22-.11-.94-.35-1.79-1.11a6.7 6.7 0 0 1-1.24-1.54c-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.06-.11-.5-1.21-.69-1.66-.18-.43-.36-.37-.5-.38h-.43c-.15 0-.39.06-.6.28-.2.22-.79.77-.79 1.87 0 1.1.81 2.16.92 2.31.11.15 1.6 2.45 3.89 3.43.54.23.97.37 1.3.48.55.17 1.04.15 1.44.09.44-.07 1.3-.53 1.48-1.04.18-.51.18-.95.13-1.04-.05-.09-.2-.15-.42-.26z"/></svg>
+      </a>
+      <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="icone-reseau">
+        <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.21 8.8 2.2 12 2.2zm0 1.8c-3.15 0-3.5.01-4.73.07-.96.04-1.48.2-1.83.34-.46.18-.79.39-1.13.74-.35.34-.56.67-.74 1.13-.14.35-.3.87-.34 1.83-.06 1.23-.07 1.58-.07 4.73s.01 3.5.07 4.73c.04.96.2 1.48.34 1.83.18.46.39.79.74 1.13.34.35.67.56 1.13.74.35.14.87.3 1.83.34 1.23.06 1.58.07 4.73.07s3.5-.01 4.73-.07c.96-.04 1.48-.2 1.83-.34.46-.18.79-.39 1.13-.74.35-.34.56-.67.74-1.13.14-.35.3-.87.34-1.83.06-1.23.07-1.58.07-4.73s-.01-3.5-.07-4.73c-.04-.96-.2-1.48-.34-1.83a2.9 2.9 0 0 0-.74-1.13 2.9 2.9 0 0 0-1.13-.74c-.35-.14-.87-.3-1.83-.34-1.23-.06-1.58-.07-4.73-.07zm0 3.06a4.94 4.94 0 1 1 0 9.88 4.94 4.94 0 0 1 0-9.88zm0 1.8a3.14 3.14 0 1 0 0 6.28 3.14 3.14 0 0 0 0-6.28zm5.14-1.99a1.15 1.15 0 1 1-2.3 0 1.15 1.15 0 0 1 2.3 0z"/></svg>
+      </a>
+      <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok" class="icone-reseau">
+        <svg viewBox="0 0 24 24"><path d="M16.6 2h-3.3v13.7c0 1.36-1.1 2.47-2.47 2.47a2.47 2.47 0 0 1-2.47-2.47c0-1.36 1.1-2.47 2.47-2.47.27 0 .53.04.77.12v-3.36a5.83 5.83 0 0 0-.77-.05A5.84 5.84 0 0 0 5 15.66a5.84 5.84 0 0 0 5.84 5.84 5.84 5.84 0 0 0 5.84-5.84V8.4a7.5 7.5 0 0 0 4.32 1.37V6.44c-1.83 0-3.4-1.13-4.06-2.73-.2-.5-.32-1.05-.34-1.63z"/></svg>
+      </a>
+    </div>
+
+    <p class="pied-copy">&copy; 2026 Le Rêve Signature — Koléa, Tipaza. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<script src="cap.js"></script>
+</body>
+</html>
